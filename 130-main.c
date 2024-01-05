@@ -33,19 +33,19 @@ int main(void)
 
 	binary_tree_print(root);
 	heap = binary_tree_is_heap(root);
-	printf("Is %d heap: %d\\n", root->n, heap);
+	printf("Is %d heap: %d\n", root->n, heap);
 	heap = binary_tree_is_heap(root->left);
-	printf("Is %d heap: %d\\n", root->left->n, heap);
+	printf("Is %d heap: %d\n", root->left->n, heap);
 
 	root->right->left = binary_tree_node(root->right, 97);
 	binary_tree_print(root);
 	heap = binary_tree_is_heap(root);
-	printf("Is %d heap: %d\\n", root->n, heap);
+	printf("Is %d heap: %d\n", root->n, heap);
 
 	root = basic_tree();
 	root->right->right = binary_tree_node(root->right, 79);
 	binary_tree_print(root);
 	heap = binary_tree_is_heap(root);
-	printf("Is %d heap: %d\\n", root->n, heap);
+	printf("Is %d heap: %d\n", root->n, heap);
 	return (0);
 }

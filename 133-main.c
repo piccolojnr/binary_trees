@@ -22,15 +22,15 @@ int main(void)
 	binary_tree_print(tree);
 
 	extract = heap_extract(&tree);
-	printf("Extracted: %d\\n", extract);
+	printf("Extracted: %d\n", extract);
 	binary_tree_print(tree);
 
 	extract = heap_extract(&tree);
-	printf("Extracted: %d\\n", extract);
+	printf("Extracted: %d\n", extract);
 	binary_tree_print(tree);
 
 	extract = heap_extract(&tree);
-	printf("Extracted: %d\\n", extract);
+	printf("Extracted: %d\n", extract);
 	binary_tree_print(tree);
 	binary_tree_delete(tree);
 	return (0);
